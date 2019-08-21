@@ -80,11 +80,11 @@ export default {
       this.readfile(this.filepath)
     },
     readfile (file) {
-      let result = JSON.parse(fs.readFileSync(file.path))
-      if (result) {
+      try {
+        let result = JSON.parse(fs.readFileSync(file.path))
         this.editer.set(result)
         this.fileEditer.set(result)
-      } else {
+      } catch (e) {
         alert('文件读取失败')
       }
     }
