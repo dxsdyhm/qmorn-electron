@@ -5,6 +5,7 @@
         <img src="~@/assets/logo.svg" class="img-responsive logo mx-auto d-block" alt="logo" />
         <div class="text-center my-3">启萌星桌面软件</div>
         <button type="button" class="btn btn-outline-success btn-block" @click="roauterTest()">开始</button>
+        <button type="button" class="btn btn-outline-success btn-block" @click="jsonfile()">Json编辑</button>
       </div>
     </div>
   </div>
@@ -19,6 +20,9 @@ export default {
     },
     roauterTest () {
       this.$router.replace('/second')
+    },
+    jsonfile () {
+      this.$router.replace('/jsonfile')
     }
   }
 }

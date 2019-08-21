@@ -16,6 +16,11 @@ export default new Router({
       component: require('@/page/second').default
     },
     {
+      path: '/jsonfile',
+      name: 'jsonfile',
+      component: require('@/page/jsonfile').default
+    },
+    {
       path: '*',
       redirect: '/'
     }
