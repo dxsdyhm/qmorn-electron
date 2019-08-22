@@ -5,7 +5,7 @@
       accept="text/*"
       v-model="filepath"
       :state="Boolean(file)"
-      placeholder="Choose a file or drop it here..."
+      placeholder="选择文件或者拖放文件到此..."
       drop-placeholder="Drop file here..."
     ></b-form-file>
     <div class="row no-gutters justify-content-between">
